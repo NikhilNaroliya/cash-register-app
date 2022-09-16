@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./main.css"/> -->
+    <style>
+        body{
+            background-image: url("https://thumbs.dreamstime.com/b/background-money-seamless-texture-dollar-bills-trendy-light-pink-tonality-seamless-texture-bills-148960216.jpg");
+        }
+    .container{
+    
+        border-radius: 1rem;
+        border: 2px solid rgb(223, 148, 160);
+        margin:auto;
+    background-color: rgb(232, 173, 221);
+     display: flex;
+     flex-direction:column ;
+     align-items: center;
+     width: 50vw;
+
+}
+#bill-amount{
+    /* border-radius:1rem; */
+     border-radius: 0.5rem;
+
+    background-color: rgb(238, 155, 219);
+}
+#cash-give{
+    border-radius: 0.5rem;
+
+background-color: rgb(247, 159, 206);
+
+}
+#check-button{
+    background-color: rgb(252, 76, 170);
+    margin:0.5rem ;
+    color: white;
+     font-size: large;
+     border-radius: 0.5rem;
+}
+.change-table{
+    background-color: rgb(211, 147, 159);
+    border: 2px solid;
+    margin: 1rem;
+}
+.no-of-notes{
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+.note{
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
+
+}
+#error-message{
+    width: auto;
+    background-color: rgb(197, 123, 197);
+    border: 2px solid rgb(37, 2, 2);
+}
+#caption{
+    margin: 0.3rem;
+    background-color: rgb(212, 126, 175);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+.heading{
+     margin: auto;
+     width: 20vh;
+}
+.description{
+    border-radius: 5px;
+    background-color: rgb(231, 136, 190);
+}
+    </style>
+
+</head>
+<body>
+        <div class="container">
+        <h1 class="heading">Cash Register manager</h1>
+        <p class="description">Enter the bill amount and cash given by the customer and know minimum number of notes to return </p>
+        <label for="bill-amount">Bill Amount</label>
+        <input id="bill-amount" type="text"/>
+        
+
+        <label for="cash-give">Cash Given</label>
+        <input id="cash-give" type="text"/>
+        <button id="check-button">Check
+        </button>
+        <p id="error-message">error</p>
+        <table class="change-table">
+            <caption id="caption">Return change</caption>
+            <tr> 
+                <th>NO of Notes </th>
+                <td class="no-of-notes">0</td>
+                <td class="no-of-notes">0</td>
+                <td class="no-of-notes">0</td>
+                <td class="no-of-notes">0</td>
+                <td class="no-of-notes">0</td>
+                <td class="no-of-notes">0</td>
+                <td class="no-of-notes">0</td>
+            </tr>
+            <tr>
+                <th>Note</th>
+                <td class="note">2000</td>
+                <td class="note">500</td>
+                <td class="note">100</td>
+                <td class="note">20</td>
+                <td class="note">10</td>
+                <td class="note">5</td>
+                <td class="note">1</td>
+            </tr>
+        </table>
+    </div>   
+</body>
+<script src="./main.js" ></script>
+</html>
